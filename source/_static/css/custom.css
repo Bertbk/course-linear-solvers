@@ -1,0 +1,33 @@
+
+/* Dark mode: invert color for svg*/
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"])
+  img[src$=".svg"]{
+    filter: grayscale(1) invert(1);
+  }
+  body:not([data-theme="light"])
+  div.mermaid svg path.relation
+  {
+    stroke:ghostwhite !important;
+  }
+}
+body[data-theme="dark"]
+img[src$=".svg"]{
+  filter: grayscale(1) invert(1);
+}
+body[data-theme="dark"]
+div.mermaid svg path.relation
+{
+  stroke:ghostwhite !important;
+}
+
+div.app-container{
+  text-align:center;
+  width:100%;
+}
+
+iframe.app-content{
+  width: 1px;
+  min-width: 100%;
+  border: 1px solid;
+}
