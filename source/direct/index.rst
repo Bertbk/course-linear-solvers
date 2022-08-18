@@ -7,3 +7,6 @@ Solveurs Directs
 
   diagonal-system
   triangular-system
+  lu
+  lu-pivot
+  performances

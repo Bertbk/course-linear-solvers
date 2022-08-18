@@ -89,6 +89,7 @@ html_static_path = ['_static']
 
 
 html_css_files = [
+    'https://unpkg.com/flickity@2/dist/flickity.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css',
     'css/proof.css',
     'css/custom.css',
@@ -100,7 +101,8 @@ html_js_files = [
 #    'js/basis-function/main.js',
 #    'js/jacobian/main.js',
 #    'js/loc2glob/main.js',
-    'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
+     'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js',
+     'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
 ]
 
 # Additional stuff for the LaTeX preamble.

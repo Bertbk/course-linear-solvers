@@ -1,3 +1,5 @@
+.. _sec-test-matrices:
+
 Matrice Test
 ============
 

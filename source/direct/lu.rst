@@ -13,7 +13,7 @@ Principe
 Cette méthode permet de transformer une matrice carré :math:`A` en un produit d'une matrice triangulaire inférieur :math:`L` et d'une matrice triangulaire supérieur :math:`U`. Cette décomposition permet notamment de résoudre des problèmes d'algèbre linéaire du type
 
 .. math::
-  :label:eq-Axb
+  :label: eq-Axb
 
   AX=b \iff LUX = B
 
@@ -41,7 +41,7 @@ Factorisation partielle
 Notons :math:`a_{i,j}` le coefficient :math:`(i,j)` de la matrice :math:`A`. Nous allons tout d'abord faire une **factorisation partielle** de la matrice
 
 .. math::
-  :label:eq-factorisation-partielle
+  :label: eq-factorisation-partielle
 
   A=\begin{pmatrix}
     a_{0,0} & A_{0,1} \\
@@ -103,20 +103,20 @@ Le lien entre factorisation partielle et factorisation complète est donné par 
   
   .. math::
 
-      \begin{pmatrix}
-        A_{0,0} & A_{0,1} \\
-        A_{1,0}  & A_{1,1}
-      \end{pmatrix}=
-      \begin{pmatrix}
-        L_{0,0} & 0 \\
-        L_{1,0} & L_{1,1}
-      \end{pmatrix}
-      \begin{pmatrix}
-        U_{0,0} & U_{0,1} \\
-        0 & U_{1,1}
-      \end{pmatrix}
+    \begin{pmatrix}
+      A_{0,0} & A_{0,1} \\
+      A_{1,0}  & A_{1,1}
+    \end{pmatrix}=
+    \begin{pmatrix}
+      L_{0,0} & 0 \\
+      L_{1,0} & L_{1,1}
+    \end{pmatrix}
+    \begin{pmatrix}
+      U_{0,0} & U_{0,1} \\
+      0 & U_{1,1}
+    \end{pmatrix}
 
-    où :math:`L_{1,0}` et :math:`U_{0,1}` sont ceux de la **factorisation partielle** :eq:`eq-factorisation-partielle`.
+  où :math:`L_{1,0}` et :math:`U_{0,1}` sont ceux de la **factorisation partielle** :eq:`eq-factorisation-partielle`.
 
 
 Ce théorème nous dit que dès lors qu'on arrive à décomposer un bloc de la diagonale :math:`A_{0,0}` sous forme :math:`LU`, nous n'avons plus qu'à calculer :math:`L_{1,0}`, :math:`U_{0,1}` et :math:`S_{1,1}` puis on cherche la décomposition :math:`LU` de :math:`S_{1,1}`. Autrement dit, si nous disposons d'une fonction permettant de réaliser une **factorisation partielle** d'une matrice donnée, nous pouvons envisager un algorithme itératif pour obtenir la **factorisation complète** de la matrice.
@@ -135,29 +135,90 @@ Pour obtenir la factorisation complète, un algorithme itératif possible consis
 
 où les matrices :math:`L^{(k)}` et :math:`U^{(k)}` sont obtenues à la :math:`k^{\text{ème}}` itération. La petite animation suivante montre la forme de ces matrices dans le cas d'une taille N=5 :
 
+.. raw:: html
+
+  <div class="main-carousel" data-flickity='{ "draggable": false, "isWrapped": false, "selectedAttraction": "1", "friction": "1"}'>
+  <div class="main-carousel-cell" style="width: 100%;">
+
+.. figure:: /img/lu_algo/lu_algo_0.*
+  :figwidth: 100%
+  :width: 100%
+  :alt: Algorithme LU étape 0
+  :align: center
+
+  Algorithme LU étape 0
 
 .. raw:: html
 
-  .. < div class="course_lu carousel_lu"  style="text-align:center">
-  .. < div class="course_lu carousel-cell_lu">
-  .. < svg file="tps/img/lu_algo_0.svg" >
-  .. < /div >
-  .. < div class="course_lu carousel-cell_lu">
-  .. < svg file="tps/img/lu_algo_1.svg" >
-  .. < /div >
-  .. < div class="course_lu carousel-cell_lu">
-  .. < svg file="tps/img/lu_algo_2.svg" >
-  .. < /div >
-  .. < div class="course_lu carousel-cell_lu">
-  .. < svg file="tps/img/lu_algo_3.svg" >
-  .. < /div >
-  .. < div class="course_lu carousel-cell_lu">
-  .. < svg file="tps/img/lu_algo_4.svg" >
-  .. < /div >
-  .. < div class="course_lu carousel-cell_lu">
-  .. < svg file="tps/img/lu_algo_5.svg" >
-  .. < /div >
-  .. < /div >
+  </div>
+  <div class="main-carousel-cell" style="width: 100%;"> 
+
+.. figure:: /img/lu_algo/lu_algo_1.*
+  :figwidth: 100%
+  :width: 100%
+  :alt: Algorithme LU étape 1
+  :align: center
+
+  Algorithme LU étape 1
+
+.. raw:: html
+
+  </div>
+  <div class="main-carousel-cell" style="width: 100%;"> 
+
+.. figure:: /img/lu_algo/lu_algo_2.*
+  :figwidth: 100%
+  :width: 100%
+  :alt: Algorithme LU étape 2
+  :align: center
+
+  Algorithme LU étape 2
+
+.. raw:: html
+
+  </div>
+  <div class="main-carousel-cell" style="width: 100%;"> 
+
+.. figure:: /img/lu_algo/lu_algo_3.*
+  :figwidth: 100%
+  :width: 100%
+  :alt: Algorithme LU étape 3
+  :align: center
+
+  Algorithme LU étape 3
+
+.. raw:: html
+
+  </div>
+  <div class="main-carousel-cell" style="width: 100%;"> 
+
+.. figure:: /img/lu_algo/lu_algo_4.*
+  :figwidth: 100%
+  :width: 100%
+  :alt: Algorithme LU étape 4
+  :align: center
+
+  Algorithme LU étape 4
+
+.. raw:: html
+
+  </div>
+  <div class="main-carousel-cell" style="width: 100%;"> 
+
+.. figure:: /img/lu_algo/lu_algo_5.*
+  :figwidth: 100%
+  :width: 100%
+  :alt: Algorithme LU étape 5
+  :align: center
+
+  Algorithme LU étape 5
+ 
+.. raw:: html
+
+  </div>
+  </div>
+
+
 
 Pseudo code
 +++++++++++
@@ -194,7 +255,10 @@ Plutôt que de stocker 3 matrices :code:`L`, :code:`U` et :code:`S`, dont :ref:`
 
 Cela donne le pseudo-code suivant :
 
-{{% div class="course_lu carousel" %}}{{% div class="course_lu carousel-cell" style="width:50%; margin-right: 10px;"%}}
+.. raw:: html
+
+    <div class="code-carousel" data-flickity='{ "draggable": false, "isWrapped": false, "selectedAttraction": "1", "friction": "1"}'>
+  <div class="code-carousel-cell" style="width: 100%;">
 
 .. code-block::
 
@@ -216,142 +280,167 @@ Cela donne le pseudo-code suivant :
     for i = k+1:N-1
       for j = k+1:N-1
         S(i,j) = S(i,j) - L(i,k)*U(k,j);
-```
-Origine{{% /div %}}{{% div class="course_lu carousel-cell" style="width:50%; margin-right: 10px;"%}}
-```
 
-L = 0;
-U = A;
-for k =0:N-1
-  // Pivot
-  pivot = U(k,k)
-  // Colonne de L
-  L(k,k) = 1;
-  for i = k+1:N-1
-    L(i,k) = U(i,k) / pivot;
-  // Ligne de U
-  U(k,k) = U(k,k);
-  for j = k+1:N-1
-    U(k,j) = U(k,j);
-  // Complément de Schur
-  for i = k+1:N-1
+
+Factorisation LU non optimisée
+
+.. raw:: html
+
+  </div>
+  <div class="code-carousel-cell" style="width: 100%;">
+
+.. code-block::
+
+  L = 0;
+  U = A;
+  for k =0:N-1
+    // Pivot
+    pivot = U(k,k)
+    // Colonne de L
+    L(k,k) = 1;
+    for i = k+1:N-1
+      L(i,k) = U(i,k) / pivot;
+    // Ligne de U
+    U(k,k) = U(k,k);
     for j = k+1:N-1
-      U(i,j) = U(i,j) - L(i,k)*U(k,j);
-```
-Suppression de S (stockée dans U){{% /div %}}{{% div class="course_lu carousel-cell" style="width:50%; margin-right: 10px;"%}}
-```
+      U(k,j) = U(k,j);
+    // Complément de Schur
+    for i = k+1:N-1
+      for j = k+1:N-1
+        U(i,j) = U(i,j) - L(i,k)*U(k,j);
 
+Suppression de S (stockée dans U)
 
-U = A;
-for k =0:N-1
-  // Pivot
-  pivot = U(k,k)
-  // Colonne de L
-  // U(k,k) = 1;
-  for i = k+1:N-1
-    U(i,k) = U(i,k) / pivot;
-  // Ligne de U
-  U(k,k) = U(k,k);
-  for j = k+1:N-1
-    U(k,j) = U(k,j);
-  // Complément de Schur
-  for i = k+1:N-1
+.. raw:: html
+
+  </div>
+  <div class="code-carousel-cell" style="width: 100%;">
+
+.. code-block::
+
+  U = A;
+  for k =0:N-1
+    // Pivot
+    pivot = U(k,k)
+    // Colonne de L
+    // U(k,k) = 1;
+    for i = k+1:N-1
+      U(i,k) = U(i,k) / pivot;
+    // Ligne de U
+    U(k,k) = U(k,k);
     for j = k+1:N-1
-      U(i,j) = U(i,j) - U(i,k)*U(k,j);
-```
-Suppression de L (stockée dans U){{% /div %}}{{% div class="course_lu carousel-cell" style="width:50%; margin-right: 10px;"%}}
-```
+      U(k,j) = U(k,j);
+    // Complément de Schur
+    for i = k+1:N-1
+      for j = k+1:N-1
+        U(i,j) = U(i,j) - U(i,k)*U(k,j);
 
+Suppression de S et L (stockées dans U)
 
+.. raw:: html
 
-for k =0:N-1
-  // Pivot
-  pivot = A(k,k)
-  // Colonne de L
-  // A(k,k) = 1;
-  for i = k+1:N-1
-    A(i,k) = A(i,k) / pivot;
-  // Ligne de U
-  A(k,k) = A(k,k);
-  for j = k+1:N-1
-    A(k,j) = A(k,j);
-  // Complément de Schur
-  for i = k+1:N-1
+  </div>
+  <div class="code-carousel-cell" style="width: 100%;">
+
+.. code-block::
+
+  for k =0:N-1
+    // Pivot
+    pivot = A(k,k)
+    // Colonne de L
+    // A(k,k) = 1;
+    for i = k+1:N-1
+      A(i,k) = A(i,k) / pivot;
+    // Ligne de U
+    A(k,k) = A(k,k);
     for j = k+1:N-1
-      A(i,j) -= A(i,k)*A(k,j);
-```
-Suppression de U{{% /div %}}{{% /div %}}
+      A(k,j) = A(k,j);
+    // Complément de Schur
+    for i = k+1:N-1
+      for j = k+1:N-1
+        A(i,j) -= A(i,k)*A(k,j);
+
+Suppression de S, L et U
+
+.. raw:: html
+
+  </div>
+  </div>
+
+Implémentation en C++
+---------------------
+
+.. proof:exercise::
+
+  Avant de coder quoi que ce soit, modifiez le **pseudo code** de la factorisation `LU` de `A` effectuée **directement dans la matrice** `A` : nettoyez le de certaines opérations rendues inutiles !
+
+.. proof:exercise::
+
+  Implémentez une méthode de la classe `Matrice` qui factorise la `Matrice` *sur place* :
+
+  .. code-block:: cpp
+
+    void Matrice::decomp_LU();
+
+.. proof:warning::
+  
+  Après application de l'algorithme, la :code:`Matrice A` sera modifiée de telle sorte que sa partie triangulaire inférieure soit égale à :math:`L` (sans la diagonale unitaire), et sa partie triangulaire supérieure sera égale à :math:`U` (diagonale incluse). Cette méthode permet de diminuer le coût mémoire de stockage mais, attention :
+
+  - Le **produit matrice vecteur n'a alors plus de sens** une fois cet algorithme appliqué !
+  - Il ne faut pas ré-appliquer la factorisation LU sur A (c'est de toute façon inutile, mais une erreur arrive si vite...)
 
 
-## Implémentation en C++
+  Il peut être intéressant de rajouter un paramètre à la classe :code:`Matrice` de type :code:`booleen` (un "flag") permettant de déterminer si une matrice a été, ou non, déjà factorisée.
 
-{{% callout exercise %}}
-Avant de coder quoi que ce soit, modifiez le **pseudo code** de la factorisation `LU` de `A` effectuée **directement dans la matrice** `A` : nettoyez le de certaines opérations rendues inutiles !
-{{% /callout %}}
+Validation
+----------
 
-{{% callout exercise %}}
-Implémentez une méthode de la classe `Matrice` qui factorise la `Matrice` *sur place* :
-```cpp
-void Matrice::decomp_LU();
-```
-{{% /callout %}}
+.. proof:tips::
 
-{{% callout warning %}}
-Après application de l'algorithme, la `Matrice A` sera modifiée de telle sorte que sa partie triangulaire inférieure soit égale à :math:`L` (sans la diagonale unitaire), et sa partie triangulaire supérieure sera égale à :math:`U` (diagonale incluse). Cette méthode permet de diminuer le coût mémoire de stockage mais, attention :
+  Une première étape pour valider votre factorisation LU : calculer le produit :math:`LU`, vous devez retrouver :math:`A` !
 
-- Le **produit matrice vecteur n'a alors plus de sens** une fois cet algorithme appliqué !
-- Il ne faut pas ré-appliquer la factorisation LU sur A (c'est de toute façon inutile, mais une erreur arrive si vite...)
+.. proof:exercise::
+  
+  Validez votre factorisation :math:`LU` sur la matrice suivante :
 
+  .. math::
 
-Il peut être intéressant de rajouter un paramètre à la classe `Matrice` de type `booleen` (un "flag") permettant de déterminer si une matrice a été, ou non, déjà factorisée.
-{{% /callout %}}
+    A = \begin{pmatrix}
+      2 & -1 & 0 & 0 &0\\
+      -1 & 2 & -1 & 0 &0\\
+      0 & -1 & 2 & -1 &0\\
+      0 & 0& -1 & 2 & -1 \\
+      0 & 0& 0 &-1 & 2 \\
+    \end{pmatrix},
 
+  dont les matrices :math:`L` et :math:`U` sont données par :
 
-## Validation
+  .. math::
 
-{{% callout tips %}}
-Une première étape pour valider votre factorisation LU : calculer le produit :math:`LU`, vous devez retrouver :math:`A` !
-{{% /callout %}}
+    \underbrace{\begin{pmatrix}
+      1 & 0 & 0 & 0 &0\\
+      -0.5 & 1 & 0 & 0 &0\\
+      0 & -\frac{2}{3} & 1 & 0 &0\\
+      0 & 0 & -0.75 & 1 & 0 \\
+      0 & 0 & 0 &-0.8 & 1 
+    \end{pmatrix}}_{L}
+    \underbrace{\begin{pmatrix}
+      2 & -1 & 0 & 0 &0\\
+      0 & 1.5 & -1 & 0 &0\\
+      0 & 0 & \frac{4}{3} & -1 &0\\
+      0 & 0& 0 & 1.25 & -1 \\
+      0 & 0& 0 &0 & 1.2 \\
+    \end{pmatrix}}_{U}
 
-{{% callout exercise %}}
-Validez votre factorisation :math:`LU` sur la matrice suivante :
-$$
-A = \begin{pmatrix}
-  2 & -1 & 0 & 0 &0\\
-  -1 & 2 & -1 & 0 &0\\
-  0 & -1 & 2 & -1 &0\\
-  0 & 0& -1 & 2 & -1 \\
-  0 & 0& 0 &-1 & 2 \\
-\end{pmatrix},
-$$
-dont les matrices :math:`L` et :math:`U` sont données par :
-$$
-\underbrace{\begin{pmatrix}
-  1 & 0 & 0 & 0 &0\\
-  -0.5 & 1 & 0 & 0 &0\\
-  0 & -\frac{2}{3} & 1 & 0 &0\\
-  0 & 0 & -0.75 & 1 & 0 \\
-  0 & 0 & 0 &-0.8 & 1 
-\end{pmatrix}}_{L}
-\underbrace{\begin{pmatrix}
-  2 & -1 & 0 & 0 &0\\
-  0 & 1.5 & -1 & 0 &0\\
-  0 & 0 & \frac{4}{3} & -1 &0\\
-  0 & 0& 0 & 1.25 & -1 \\
-  0 & 0& 0 &0 & 1.2 \\
-\end{pmatrix}}_{U}
-$$
-Notez que cette matrice fait partie [des matrices de test régulières]({{<relref "../dense/test-matrices.md">}}).
-{{% /callout %}}
+Notez que cette matrice fait partie :ref:`des matrices de test régulières <sec-test-matrices>`.
 
-{{% callout exercise %}}
-Résolvez numériquement le problème suivant à l'aide de la factorisation LU :
-$$
-A X= b,
-$$
-où :math:`A` est la matrice de l'exercice précédent et :math:`b = [1,1,1,1,1]^T`. La solution du problème est :math:`X = [2.5, 4,4.5, 4,2.5]^T`.
-{{% /callout %}}
+.. proof:exercise::
 
-
-{{% js type="text/javascript" src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js" %}}
-{{% js type="text/javascript" src="../js/lu_fact.js" %}}
+  Résolvez numériquement le problème suivant à l'aide de la factorisation LU :
+  
+  .. math::
+  
+    A X= b,
+  
+  où :math:`A` est la matrice de l'exercice précédent et :math:`b = [1,1,1,1,1]^T`. La solution du problème est :math:`X = [2.5, 4,4.5, 4,2.5]^T`.
+    

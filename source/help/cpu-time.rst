@@ -1,3 +1,5 @@
+.. _sec-cpu-time:
+
 Temps CPU
 =========
 
