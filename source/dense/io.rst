@@ -1,3 +1,5 @@
+.. _dense-io:
+
 Input / Output
 ==============
 

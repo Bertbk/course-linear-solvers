@@ -4,9 +4,9 @@ Rappel et Pré-Requis
 
 .. epigraph::
 
-  TODO
+  Y'all can go to hell and I will go to Texas.
 
-  -- TODO
+  -- Davy Crockett
 
 
 .. toctree::

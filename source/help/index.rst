@@ -4,9 +4,9 @@ Aides & Astuces
 
 .. epigraph::
 
-  TODO
+  Trying is the first step toward failure
 
-  -- TODO
+  -- Homer J. Simpson
 
 
 .. toctree::

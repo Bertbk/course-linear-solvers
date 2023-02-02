@@ -1,8 +1,3 @@
-.. Linear Solvers documentation master file, created by
-   sphinx-quickstart on Sun Jul 17 19:08:58 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 ************
 Introduction
 ************
@@ -116,4 +111,7 @@ Nous vous conseillons de suivre les étapes **dans l'ordre**. Tout au long des T
    start/index
    dense/index
    direct/index
+   iterative/index
+   krylov/index
+   sparse/index
    
