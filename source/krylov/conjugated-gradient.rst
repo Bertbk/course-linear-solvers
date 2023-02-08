@@ -91,6 +91,6 @@ Vous devriez obtenir des résultats proches de ceux-ci (sauf pour le temps CPU) 
 
 .. raw:: html
   
-  <script type="text/javascript" src="../../_static/js/data_cg.js"></script>
-  <script type="text/javascript" src="../../_static/js/cg.js"></script>
+  <script defer type="text/javascript" src="../../_static/js/data_cg.js"></script>
+  <script defer type="text/javascript" src="../../_static/js/cg.js"></script>
 
