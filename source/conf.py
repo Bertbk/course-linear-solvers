@@ -96,13 +96,12 @@ html_css_files = [
 ]
 
 html_js_files = [
-    'js/proof.js',
-#    'js/custom.js',
-#    'js/basis-function/main.js',
-#    'js/jacobian/main.js',
-#    'js/loc2glob/main.js',
      'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js',
      'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
+     'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
+     'https://cdn.plot.ly/plotly-2.18.1.js',
+#     'js/data_cg.js',
+#     'js/cg.js',     
 ]
 
 # Additional stuff for the LaTeX preamble.

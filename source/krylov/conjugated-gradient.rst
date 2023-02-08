@@ -53,9 +53,8 @@ Vous devriez obtenir des résultats similaires à ceux ci-dessous (sauf pour le 
 
 .. raw:: html
 
-  TODO: <div id="convergence_history"></div>
-
-  {{% div id="table_cg"%}}
+  <div id="convergence_history"></div>
+  <div id="table_cg">
 
 +---------------------+----+----+----+----+----+
 | Méthode             |    |    |    |    |    |
@@ -67,7 +66,7 @@ Vous devriez obtenir des résultats similaires à ceux ci-dessous (sauf pour le 
 
 .. raw:: html
   
-  {{% /div %}}
+  </div>
 
 
 En fonction de la taille de la matrice
@@ -92,7 +91,6 @@ Vous devriez obtenir des résultats proches de ceux-ci (sauf pour le temps CPU) 
 
 .. raw:: html
   
-  TODO:
-  <script type="text/javascript" src="../js/data_cg.js" />
-  <script type="text/javascript" src="../js/cg.js" />
+  <script type="text/javascript" src="../../_static/js/data_cg.js"></script>
+  <script type="text/javascript" src="../../_static/js/cg.js"></script>
 
