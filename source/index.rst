@@ -20,19 +20,19 @@ Langages choisis
 Pour le développement : C++
 -----------------------------------
 
-Ces TPs vous demandent d'être **familié avec au moins un langage compilé** (:code:`C`, C++, :code:`Fortran`, ...) et le langage retenu ici sera le C++. Si vous n'êtes ni familié avec un langage compilé ni avec le C++, vous allez devoir **travailler dure** pour rattraper le retard : ces TPs **ne sont pas** des TPs d'informatique ! Rien n'est impossible mais nous **ne ferons pas le travail à votre place**. Nous avons mis en place  une section contenant des liens pour vous aider (TODO: link).
+Ces TPs vous demandent d'être **familié avec au moins un langage compilé** (:code:`C`, C++, :code:`Fortran`, ...) et le langage retenu ici sera le C++. Si vous n'êtes ni familié avec un langage compilé ni avec le C++, vous allez devoir **travailler dure** pour rattraper le retard : ces TPs **ne sont pas** des TPs d'informatique ! Rien n'est impossible mais nous **ne ferons pas le travail à votre place**. Nous avons mis en place  une section contenant des :ref:`liens pour vous aider <help_cpp>`.
 
 Pour l'analyse : :code:`Python`, :code:`Julia`, :code:`MATLAB`, ...
 -------------------------------------------------------------------
 
 À vous de décider le langage que vous préférez pour afficher les courbes et traiter les données. Nous vous incitons à utiliser `Python <https://www.python.org/>`_ avec les bibliothèques `Matplotlib <https://matplotlib.org/>`_ pour l'affichage et `Numpy <https://www.numpy.org/>`_ pour toute opération de calcul scientifique (matrice, vecteur, ...). À noter que `Julia <https://julialang.org>`_ peut également appeler Matplotlib.
 
-Dans la rubrique d'aide, nous fournissons un script Python (TODO:link json) permettant de lire un fichier :code:`JSON`, d'en extraire des données et d'afficher une courbe.
+Dans la rubrique d'aide, nous fournissons :ref:`un script Python <sec-matplotlib>` permettant de lire un fichier :code:`JSON`, d'en extraire des données et d'afficher une courbe à l'aide de Matplotlib.
 
 Organisation
 ============
 
-La partie "Premiers pas" (TODO: link start/hello-world.md) présente la compilation pour le C++ et surtout introduit une organisation possible pour le code et les fichiers. Les bonnes pratiques de programmation, à prendre *dès le début*, seront aussi soulignées. Ensuite seulement commencera l'implémentation de la bibliothèque.
+La partie :ref:`"Premiers pas" <start-hello-world>` présente la compilation pour le C++ et surtout introduit une organisation possible pour le code et les fichiers. Les bonnes pratiques de programmation, à prendre *dès le début*, seront aussi soulignées. Ensuite seulement commencera l'implémentation de la bibliothèque.
 
 Environnement
 =============
@@ -62,7 +62,7 @@ Un éditeur de textes peut intégrer un certain nombre d'outils qui peuvent vous
 Gérez vos sources avec `Git <https://git-scm.com/>`_
 ------------------------------------------------------------
 
-Stockez votre dépôt sur `Github <https://github.com>`_ (En tant qu'étudiant(e) vous pouvez souscrire au `Student Developper Pack <https://education.github.com/pack>`_) ou `Gitlab <https://gitlab.com>`_. Notez que des packages pour utiliser Git directement dans le traitement de textes sont disponibles pour VScode, Emacs et Vim. Une section d'aide y est consacrée (TODO: link git).
+Stockez votre dépôt sur `Github <https://github.com>`_ (En tant qu'étudiant(e) vous pouvez souscrire au `Student Developper Pack <https://education.github.com/pack>`_) ou `Gitlab <https://gitlab.com>`_. Notez que des packages pour utiliser Git directement dans le traitement de textes sont disponibles pour VScode, Emacs et Vim. Une :ref:`section d'aide y est consacrée <sec-git>`.
 
 .. proof:remark::
 

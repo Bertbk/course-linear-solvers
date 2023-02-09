@@ -1,3 +1,5 @@
+.. _sec-matplotlib:
+
 Matplotlib : Visualisation des Données
 ======================================
 
@@ -83,7 +85,13 @@ Nous proposons d'utiliser la bibliothèque :code:`json` pour *parser* (=lire) le
 
 Vous obtenez la figure suivante :
 
-.. TODO: {{< figure src="../matplotlib_fig1.png" title="Courbes de convergence" numbered="true" >}}
+.. figure:: /img/matplotlib_fig1.*
+  :figwidth: 100%
+  :width: 100%
+  :alt: Courbes de convergence
+  :align: center
+
+  Courbes de convergence
 
 
 Automatisation : :code:`for`
@@ -152,7 +160,14 @@ Matplotlib est très souple et permet par exemple d'afficher des sous-figures av
   plt.show()
 
 
-.. TODO: {{< figure src="../matplotlib_fig_multiple.png" title="Sous-figures" numbered="true" >}}
+.. figure:: /img/matplotlib_fig_multiple.*
+  :figwidth: 100%
+  :width: 100%
+  :alt: Exemple de sous-figures
+  :align: center
+
+  Exemple de sous-figures
+
 
 Options
 -------

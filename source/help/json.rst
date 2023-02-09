@@ -188,6 +188,8 @@ Le résultat est alors celui souhaité plus haut :
     }
   }
 
+.. _json-read:
+
 Lecture : exemple
 +++++++++++++++++
 

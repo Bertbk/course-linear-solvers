@@ -1,3 +1,5 @@
+.. _start-hello-world:
+
 Hello World!
 ============
 
