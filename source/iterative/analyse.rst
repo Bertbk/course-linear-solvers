@@ -204,4 +204,4 @@ La dépendance en :math:`N` est maintenant linéaire et non plus quadratique !
 
 .. raw:: html
 
-  <script type="text/javascript" src="../relaxation.js"></script>
+  <script defer type="text/javascript" src="../../_static/js/relaxation.js"></script>

@@ -191,7 +191,7 @@ Le résultat est alors celui souhaité plus haut :
 Lecture : exemple
 +++++++++++++++++
 
-En général, nous ne lirons pas les fichiers en `C++` mais en Python avec Matplotlib, TODO:LinkMatplotlib comme expliqué ensuite. Cependant, la lecture d'un fichier avec ce parser JSON est aisée :
+En général, nous ne lirons pas les fichiers en `C++` mais en Python avec `Matplotlib <https://matplotlib.org/>`_ comme expliqué ensuite. Cependant, la lecture d'un fichier avec ce parser JSON est aisée :
 
 .. code-block:: cpp
 
