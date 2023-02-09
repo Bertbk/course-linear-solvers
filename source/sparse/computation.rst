@@ -84,7 +84,7 @@ Autrement dit, soit les indices lignes sont différents et la comparaison est im
   Les opérateurs :code:`<` et :code:`>` ne sont pas opposés : si S < T alors on n'a pas forcément S > T (ils peuvent être égaux) !
 
 
-Classe `MatriceCOO`
+Classe :code:`MatriceCOO`
 -------------------
 
 Une matrice COO comporte un tableau de :code:`Triplet` (:code:`std::vector<Triplet>`). La méthode qui nous intéresse est :code:`MatriceCOO:to_csr()` qui retourne une matrice au format CSR. 
