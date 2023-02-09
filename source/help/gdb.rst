@@ -24,7 +24,7 @@ Compiler en mode debug
   
   Compiler (et exécuter) en mode débug est beaucoup plus lent qu'en mode standard ! N'utilisez cette option qu'en cas de débug.
 
-La première chose à faire est de compiler en mode débug avec l'option :code:`-g`. Le TODOLink:Makefile proposé dispose déjà de l'option nativement, il suffit de compiler avec l'argument :code:`debug` :
+La première chose à faire est de compiler en mode débug avec l'option :code:`-g`. Le :ref:`Makefile <sec-makefile>` proposé dispose déjà de l'option nativement, il suffit de compiler avec l'argument :code:`debug` :
 
 .. code-block:: bash
 

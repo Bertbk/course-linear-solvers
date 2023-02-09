@@ -32,7 +32,7 @@ Nous considérons une matrice de taille 200 et un vecteur membre de droite :code
 
 .. proof:exercise::
 
-  Sur une même figure, affichez les courbes de la norme du résidu relatif (:math:`\|\mathrm{r}\|/\|\mathrm{b}\|) en fonction du numéro de l'itération pour chaque méthode itérative. Cette figure s'appelle **l'historique de convergence**.
+  Sur une même figure, affichez les courbes de la norme du résidu relatif (:math:`\|\mathrm{r}\|/\|\mathrm{b}\|`) en fonction du numéro de l'itération pour chaque méthode itérative. Cette figure s'appelle **l'historique de convergence**.
 
   Quelle méthode itérative est la plus rapide (en terme de nombre d'itérations) ?
 
@@ -41,13 +41,13 @@ Vous devriez obtenir une courbe ressemblant à celle ci-dessous :
 
 .. raw:: html
 
-  TODO: <div id="convergence_history"></div>
+  <div id="convergence_history"></div>
 
 Avec les résultats suivants (**le temps CPU dépend bien évidemment de l'ordinateur** et de l'implémentation !) :
 
 .. raw:: html
 
-  TODO: {{% div id="table_iterative_standard" %}}
+  <div id="table_iterative_standard">
 
 +---------------------+--------+--------------+----------------------+
 | Méthode             | Jacobi | Gauss-Seidel | Relaxation (optimal) |
@@ -59,7 +59,7 @@ Avec les résultats suivants (**le temps CPU dépend bien évidemment de l'ordin
 
 .. raw:: html
 
-  TODO: {{% /div %}}
+  </div>
 
 Temps CPU
 ---------
@@ -72,6 +72,5 @@ Temps CPU
 
 .. raw:: html
 
-  TODO:
-  {{% js type="text/javascript" src="../js/data_standard_iterative.js"%}}
-  {{% js type="text/javascript" src="../js/standard_iterative.js"%}}
+  <script defer type="text/javascript" src="../../_static/js/data_standard_iterative.js"></script>
+  <script defer type="text/javascript" src="../../_static/js/standard_iterative.js"></script>

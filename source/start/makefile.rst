@@ -1,3 +1,5 @@
+.. _sec-makefile:
+
 Workflow : structure et Makefile
 ================================
 
