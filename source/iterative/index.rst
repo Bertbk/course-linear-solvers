@@ -4,9 +4,9 @@ Solveurs Itératifs Stationnaires
 
 .. epigraph::
 
-  TODO
+  Le diable vient toujours les mains pleines, songe Keller. Il vous offre une sélection de bienfaits pour faire passer les méfaits.
 
-  -- TODO
+  -- Don Winslow - La Frontière
 
 
 .. toctree::
