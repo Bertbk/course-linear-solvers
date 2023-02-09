@@ -13,7 +13,7 @@ Objectifs
 Algorithme générique
 --------------------
 
-Pour résoudre le problème linéaire :math:`A x= b`, une technique consiste à réécrire la matrice :math:`A` sous la forme $A = M - (M-A)$, où :math:`M` est une matrice bien choisie,  et d'appliquer le schéma itératif suivant
+Pour résoudre le problème linéaire :math:`A x= b`, une technique consiste à réécrire la matrice :math:`A` sous la forme :math:`A = M - (M-A)`, où :math:`M` est une matrice bien choisie,  et d'appliquer le schéma itératif suivant
 
 .. math::
   :label: eq-split
