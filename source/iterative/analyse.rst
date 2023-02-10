@@ -45,7 +45,7 @@ En particulier, si nous connaissons le rayon spectral de la matrice d'itération
 
 .. proof:tips::
   
-  Notez que cette matrice :math:`A_N$` fait partie :ref:`des matrices de test régulière <sec-test-matrices>`. 
+  Notez que cette matrice :math:`A_N` fait partie :ref:`des matrices de test régulière <sec-test-matrices>`. 
 
 
 Méthode de Jacobi
