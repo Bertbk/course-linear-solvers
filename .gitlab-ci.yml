@@ -9,7 +9,7 @@ pages:
   image: registry.plmlab.math.cnrs.fr/bthierry/sphinx-docker/sphinx
   stage: deploy
   script:
-    - sphinx-build source public
+    - sphinx-build source public -b dirhtml
 #    - sphinx-build -b latex . _latex
 #    - cd _latex
 #    - make
