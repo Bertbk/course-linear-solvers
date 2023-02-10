@@ -1,0 +1,21 @@
+stages:
+  - deploy
+
+variables:
+  GIT_SUBMODULE_STRATEGY: none
+  GIT_SSL_NO_VERIFY: "true"
+
+pages:
+  image: registry.plmlab.math.cnrs.fr/bthierry/sphinx-docker/sphinx
+  stage: deploy
+  script:
+    - sphinx-build -b dirhtml . public
+#    - sphinx-build -b latex . _latex
+#    - cd _latex
+#    - make
+#    - mv .pdf ../public/download/FEM.pdf
+  artifacts:
+    paths:
+    - public
+  only:
+  - main
