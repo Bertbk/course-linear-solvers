@@ -122,7 +122,7 @@ Résumé en diagrame
       +Matrice(const Matrice & )
       +~Matrice()
       +int size() const
-      +double operator()(int i, int j) const
-      + & double operator()(int i, int j)
+      +double operator#40;#41;(int i, int j) const
+      + & double operator#40;#41;(int i, int j)
       }
   </div>
