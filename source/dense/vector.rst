@@ -252,16 +252,30 @@ Résumé en diagrame
   <div class="mermaid">
   classDiagram
     class Vecteur{
-      -int N_
-      -std::vector double coef_
-      +Vecteur()
-      +Vecteur(int N)
-      +Vecteur(const Vecteur & )
-      +~Vecteur()
-      +int size() const
-      +double operator()(int i) const
-      + & double operator()(int i)
+      - int N_
+      - std::vector double coef_
+      + Vecteur()
+      + Vecteur(int N)
+      + Vecteur(const Vecteur & )
+      + ~Vecteur()
+      + int size() const
+      + double operator#40;#41;(int i) const
+      + & double operator#40;#41;(int i)
       }
   </div>
 
+
+.. proof:remark::
+
+  Nous suivons `les règles de notation de MermaidJS <https://mermaid.js.org/syntax/classDiagram.html#visibility>`_ et plus globablement `des diagrammes UML <https://fr.wikipedia.org/wiki/UML_(informatique)>`_ au symbole tilde près
+
+  =======  =============
+  Symbole  Signification
+  =======  =============
+  **+**    Public
+  **-**    Private
+  **#**    Protected
+  =======  =============
+
+  
 

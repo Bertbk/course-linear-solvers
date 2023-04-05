@@ -23,7 +23,7 @@ Nosu vous invitons aussi à préparer/modifier vos classes/fonctions/méthodes p
 Matrice Test : Laplacien
 ------------------------
 
-Nous baserons nos tests sur la `matrice du Laplacien <sec-test-matrices>` $A_N$.
+Nous baserons nos tests sur la :ref:`matrice du Laplacien <sec-test-matrices>` :math:`A_N`.
 
 
 .. proof:exercise::
@@ -31,5 +31,5 @@ Nous baserons nos tests sur la `matrice du Laplacien <sec-test-matrices>` $A_N$.
   Pour N=50, 100, 150, ... (ou autre, à vous de voir!) :
 
   1. Calculez les temps d'exécution pour factoriser chacune des deux méthodes
-  2. Dessinez les graphes du temps d'exécution par rapport à la taille de la matrice. Placez-vous en échelle logarithmique sur l'axe des abscisse afin de retrouver la complexité des algorithmes ($N^3$ pour les deux).
+  2. Dessinez les graphes du temps d'exécution par rapport à la taille de la matrice. Placez-vous en échelle logarithmique sur l'axe des abscisse afin de retrouver la complexité des algorithmes (:math:`N^3` pour les deux).
 
